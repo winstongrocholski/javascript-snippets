@@ -1,0 +1,47 @@
+<!DOCTYPE>
+  <html>
+  <head>
+    <script src='search.js'></script>
+    <script>
+      var names = ['Winston', 'Joe', 'John', 'William',
+                   'Adam', 'Maxwell', 'Bill', 'Trevor'];
+    </script>
+    <style>
+    body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #searchInput{
+      border:1px solid lightgray;
+      border-radius:3px;
+      padding:5px;
+      font-size:14px;
+      width:200px;
+    }
+    #searchResults{
+      border:1px solid lightgray;
+      border-radius:3px;
+      position:absolute;
+      display:none;
+      flex-direction: column;
+      margin-top:5px;
+      width:200px;
+    }
+    span{
+      margin-top:2px;
+      margin-bottom:2px;
+      text-indent:5px;
+      width:200px;
+    }
+    span:hover{
+      background-color:#F1F1F1;
+      cursor:pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <div id='search'></div>
+    <script>search.setup(names, 'search'); </script>
+  </body>
+</html>
